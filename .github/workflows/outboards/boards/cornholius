@@ -2,6 +2,6 @@
 # https://github.com/manna-harbour/miryoku
 
 outboard_repository=elpekenin/cornholius
-outboard_ref=cornholius
+outboard_ref=main
 outboard_from=boards/arm/cornholius
 outboard_to=boards/arm/cornholius
