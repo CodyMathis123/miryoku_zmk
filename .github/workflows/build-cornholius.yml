@@ -1,0 +1,17 @@
+# Copyright 2023 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+name: 'My Cornhole'
+on: workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '[
+        "cornholius"
+      ]'
+      custom_config: '["#define MIRYOKU_KLUDGE_BOTTOMROWCOMBOS\n#define U_TAPPING_TERM 175"]'
+      kconfig: '["CONFIG_ZMK_MOUSE=y\nCONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY=16"]'
+      branches: '["zmkfirmware/zmk/main petejohanson/zmk/feat/pointers-move-scroll"]'
+      alphas: '["qwerty"]'
