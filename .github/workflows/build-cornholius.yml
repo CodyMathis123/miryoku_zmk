@@ -11,7 +11,7 @@ jobs:
       board: '[
         "cornholius"
       ]'
-      custom_config: '["#define MIRYOKU_KLUDGE_BOTTOMROWCOMBOS\n#define U_TAPPING_TERM 175"]'
-      kconfig: '["CONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY=16"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_BOTTOMROWCOMBOS\n#define U_TAPPING_TERM 175\n#define MIRYOKU_KLUDGE_SOFT_OFF"]'
+      kconfig: '["CONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY=16\nCONFIG_ZMK_PM_SOFT_OFF=y"]'
       branches: '["zmkfirmware/zmk/main"]'
       alphas: '["qwerty"]'
