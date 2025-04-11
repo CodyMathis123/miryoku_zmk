@@ -21,6 +21,7 @@ MIRYOKU_LAYER_LIST
 #if defined (MIRYOKU_KLUDGE_DOUBLETAPBOOT)
   #if defined (MIRYOKU_KLUDGE_SOFT_OFF)
 MIRYOKU_DOUBLE_TAP_GUARD(u_soft_off, &soft_off)
+MIRYOKU_DOUBLE_TAP_GUARD(u_bootloader, &bootloader)
   #else
 MIRYOKU_DOUBLE_TAP_GUARD(u_bootloader, &bootloader)
   #endif

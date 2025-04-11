@@ -6,12 +6,14 @@
 #if defined (MIRYOKU_KLUDGE_DOUBLETAPBOOT)
   #if defined (MIRYOKU_KLUDGE_SOFT_OFF)
     #define U_BOOT &u_soft_off
+    #define U_BOOT2 &bootloader
   #else
     #define U_BOOT &u_bootloader
   #endif
 #else
   #if defined (MIRYOKU_KLUDGE_SOFT_OFF)
     #define U_BOOT &soft_off
+    #define U_BOOT2 &bootloader
   #else
     #define U_BOOT &bootloader
   #endif
