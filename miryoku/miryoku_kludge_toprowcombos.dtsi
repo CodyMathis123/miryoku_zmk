@@ -1,7 +1,7 @@
 // Copyright 2022 Manna Harbour
 // https://github.com/manna-harbour/miryoku
 
-#define MIRYOKU_KLUDGE_TOPROWCOMBOS_TERM 50
+#define MIRYOKU_KLUDGE_TOPROWCOMBOS_TERM 100
 #define MIRYOKU_KLUDGE_TOPROWCOMBOS_MACRO(LAYER, POSITION, BINDING) \
 toprowcombos_ ## LAYER ## _ ## POSITION { \
   layers = <LAYER>; \
