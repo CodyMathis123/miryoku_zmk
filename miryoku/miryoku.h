@@ -25,6 +25,10 @@
 
 #define U_TAPPING_TERM 200
 
+#if !defined (U_QUICK_TAP_MS)
+  #define U_QUICK_TAP_MS 125
+#endif
+
 #include "miryoku_clipboard.h"
 
 #include "miryoku_double_tap_guard.h"
