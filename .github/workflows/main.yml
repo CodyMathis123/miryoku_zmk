@@ -74,7 +74,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           path: 'miryoku_zmk'
-          ref: 'v0.3'
       - name: main
         id: main
         run: |
