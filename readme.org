@@ -184,7 +184,7 @@ Appends to [[#kconfig-configuration][Kconfig configuration]].  Join multiple lin
 
 Used to select an alternative ZMK branch for building, and to merge branches into ZMK at build time.
 
-Branches are specified in the form ~<user>/<repo>/<branch>~.  E.g. the default ZMK branch is ~zmkfirmware/zmk/zmk-3.5-branch~, or the main branch would be specified as ~zmkfirmware/zmk/main~.
+Branches are specified in the form ~<user>/<repo>/<branch>~.  The default ZMK branch is ~zmkfirmware/zmk/zmk-3.5-branch~.  To use the main branch instead, specify ~zmkfirmware/zmk/main~.
 
 Multiple space separated branches can be specified.  The first branch specified is used as an alternative ZMK branch for building.  Any additional branches will be merged.  Automatic merging is only possible where there are no conflicts.  If there are conflicts, build from the branch directly, or request a rebase from the branch maintainer.
 
