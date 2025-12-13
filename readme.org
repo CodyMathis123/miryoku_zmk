@@ -184,7 +184,7 @@ Appends to [[#kconfig-configuration][Kconfig configuration]].  Join multiple lin
 
 Used to select an alternative ZMK branch for building, and to merge branches into ZMK at build time.
 
-Branches are specified in the form ~<user>/<repo>/<branch>~.  E.g. the default ZMK branch would be specified as ~zmkfirmware/zmk/main~.
+Branches are specified in the form ~<user>/<repo>/<branch>~.  E.g. the default ZMK branch is ~zmkfirmware/zmk/zmk-3.5-branch~, or the main branch would be specified as ~zmkfirmware/zmk/main~.
 
 Multiple space separated branches can be specified.  The first branch specified is used as an alternative ZMK branch for building.  Any additional branches will be merged.  Automatic merging is only possible where there are no conflicts.  If there are conflicts, build from the branch directly, or request a rebase from the branch maintainer.
 
@@ -674,7 +674,7 @@ Use Miryoku ZMK with any keyboard with [[https://github.com/manna-harbour/xmk][�
 
 For [[#local-builds][local builds]], first switch to or merge https://github.com/zmkfirmware/zmk/pull/1318. Add https://github.com/manna-harbour/xmk/tree/main/zmk/boards/shields/xmk as ~config/boards/shields/xmk~. Build with shield ~xmk~ and the appropriate board.
 
-For [[#workflow-builds][workflow builds]] using the [[#build-inputs][Build Inputs]] workflow, use ~xmk~ with the ~shield~ option, the appropriate board with the ~board~ option, and ~petejohanson/zmk/shell/tap-command~ with the ~branches~ option.  Alternatively, use ~zmkfirmware/zmk/main petejohanson/zmk/shell/tap-command~ to attempt an automatic [[#branches][merge]] of the branch into ZMK main.
+For [[#workflow-builds][workflow builds]] using the [[#build-inputs][Build Inputs]] workflow, use ~xmk~ with the ~shield~ option, the appropriate board with the ~board~ option, and ~petejohanson/zmk/shell/tap-command~ with the ~branches~ option.  Alternatively, use ~zmkfirmware/zmk/zmk-3.5-branch petejohanson/zmk/shell/tap-command~ to attempt an automatic [[#branches][merge]] of the branch into the default ZMK branch.
 
 For workflow builds using [[#build-examples][Build Example]] workflows, see the [[.github/workflows/build-example-xmk-xmk.yml][Build Example 𝑥MK xmk]] workflow.
 
@@ -683,7 +683,7 @@ For workflow builds using [[#build-examples][Build Example]] workflows, see the 
 
 For [[#local-builds][local builds]], first switch to or merge https://github.com/zmkfirmware/zmk/pull/1318. Add ~#define MIRYOKU_KLUDGE_TAPDELAY~ to the config file. Build with board ~native_posix_64~.
 
-For [[#workflow-builds][workflow builds]] using the [[#build-inputs][Build Inputs]] workflow, use ~native_posix_64~ with the ~board~ option, ~#define MIRYOKU_KLUDGE_TAPDELAY~ with the ~custom_config~ option, and ~petejohanson/zmk/shell/tap-command~ with the ~branches~ option.  Alternatively, use ~zmkfirmware/zmk/main petejohanson/zmk/shell/tap-command~ to attempt an automatic [[#branches][merge]] of the branch into ZMK main.
+For [[#workflow-builds][workflow builds]] using the [[#build-inputs][Build Inputs]] workflow, use ~native_posix_64~ with the ~board~ option, ~#define MIRYOKU_KLUDGE_TAPDELAY~ with the ~custom_config~ option, and ~petejohanson/zmk/shell/tap-command~ with the ~branches~ option.  Alternatively, use ~zmkfirmware/zmk/zmk-3.5-branch petejohanson/zmk/shell/tap-command~ to attempt an automatic [[#branches][merge]] of the branch into the default ZMK branch.
 
 For workflow builds using [[#build-examples][Build Example]] workflows, see the [[.github/workflows/build-example-xmk-native_posix_64.yml][Build Example 𝑥MK native_posix_64]] workflow.
 
