@@ -522,6 +522,21 @@ Kconfig configuration can also be specified in the [[#kconfig][kconfig option]] 
 See https://github.com/manna-harbour/miryoku/discussions/85.
 
 
+*** Gaming Layer
+
+A gaming layer is available for keyboards with extra keys beyond the standard 36-key Miryoku layout. Currently implemented for the Cornholius (48-key) keyboard.
+
+The gaming layer provides:
+- Standard QWERTY layout without tap-hold behaviors
+- Utilization of extra keys for common gaming modifiers (CTRL, SHIFT, ALT)
+- Layer lock functionality to stay in gaming mode
+- Easy return to base layer when done gaming
+
+To access the gaming layer, navigate to the FUN layer and double-tap the gaming layer key (in the bottom right area). To return to the base layer, double-tap the "To Base" key available in the gaming layer.
+
+See [[docs/gaming-layer.md][Gaming Layer documentation]] for detailed information about the layout and usage.
+
+
 *** Double Tap Boot
 
 Double tap is used with [[https://github.com/manna-harbour/miryoku/tree/master/docs/reference#additional-features][Additional features]]. Double tap for the bootloader behavior is not supported in ZMK on split keyboards. See https://github.com/zmkfirmware/zmk/issues/1494. By default, double tap for bootloader is disabled. Use a single tap instead.
