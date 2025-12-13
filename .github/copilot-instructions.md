@@ -86,8 +86,9 @@ This repository contains the Miryoku implementation for ZMK (Zephyr Mechanical K
 ## Important Notes
 
 ### Copyright and Attribution
-- All files include copyright header: `Copyright 2022-2023 Manna Harbour`
-- Maintain attribution when modifying existing files
+- All files include copyright header: `Copyright [YEAR] Manna Harbour` (where YEAR varies by file, typically 2021-2022)
+- Maintain existing copyright years and attribution when modifying files
+- New files should follow the same pattern with appropriate year
 
 ### Documentation Format
 - Primary documentation is in `readme.org` (Emacs Org mode format)
