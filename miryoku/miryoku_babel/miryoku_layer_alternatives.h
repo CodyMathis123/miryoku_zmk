@@ -391,4 +391,10 @@ U_NP,              U_NP,              U_BTN3,            U_BTN1,            U_BT
 &kp Q,             &kp W,             &kp E,             &kp R,             &kp T,             &kp Y,             &kp U,             &kp I,             &kp O,             &kp P,             \
 &kp A,             &kp S,             &kp D,             &kp F,             &kp G,             &kp H,             &kp J,             &kp K,             &kp L,             &kp SQT,           \
 &kp Z,             &kp X,             &kp C,             &kp V,             &kp B,             &kp N,             &kp M,             &kp COMMA,         &kp DOT,           &kp SLASH,         \
-U_NP,              U_NP,              &kp ESC,           &kp SPACE,         &kp TAB,           &kp RET,           &kp BSPC,          &u_to_U_BASE,      U_NP,              U_NP
+U_NP,              U_NP,              &kp ESC,           &kp SPACE,         U_LT(U_GAMEFN, TAB), &kp RET,         &kp BSPC,          &u_to_U_BASE,      U_NP,              U_NP
+
+#define MIRYOKU_ALTERNATIVES_GAMEFN \
+&kp F5,            &kp I,             &kp O,             &kp P,             &kp LBKT,          U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
+&kp F8,            &kp J,             &kp K,             &kp M,             &kp RBKT,          U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
+&kp F1,            &kp F2,            &kp F3,            &kp F4,            &kp F6,            U_NA,              U_NA,              U_NA,              U_NA,              U_NA,              \
+U_NP,              U_NP,              &trans,            &trans,            &trans,            U_NA,              U_NA,              U_NA,              U_NP,              U_NP
