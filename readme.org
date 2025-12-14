@@ -530,6 +530,7 @@ The gaming layer provides:
 - Standard QWERTY layout without tap-hold behaviors
 - Utilization of extra keys for common gaming modifiers (CTRL, SHIFT, ALT)
 - Layer lock functionality to stay in gaming mode
+- Game Function layer for quick access to function keys and game shortcuts
 - Easy return to base layer when done gaming
 
 To access the gaming layer, navigate to the FUN layer and double-tap the gaming layer key (in the bottom right area). To return to the base layer, double-tap the "To Base" key available in the gaming layer.
