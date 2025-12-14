@@ -14,5 +14,5 @@ jobs:
       ]'
       custom_config: '["#define MIRYOKU_KLUDGE_BOTTOMROWCOMBOS\n#define U_TAPPING_TERM 175"]'
       kconfig: '["CONFIG_ZMK_DISPLAY_FULL_REFRESH_PERIOD=600\nCONFIG_ZMK_DISPLAY_HIDE_MOMENTARY_LAYERS=y\nCONFIG_CUSTOM_WIDGET_LAYER_STATUS_HIDE_HEADING=y\nCONFIG_CUSTOM_WIDGET_LOGO_IMAGE_MIRYOKU=y\nCONFIG_ZMK_COMBO_MAX_COMBOS_PER_KEY=16"]'
-      branches: '["zmkfirmware/zmk/v0.3-branch","SethMilliken/zmk/tree/zen-display-patches"]'
+      branches: '["SethMilliken/zmk/tree/zen-display-patches"]'
       alphas: '["qwerty"]'
