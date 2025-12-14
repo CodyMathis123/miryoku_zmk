@@ -58,10 +58,12 @@ F1  F2 F3 F4 F6
 This layout is optimized for games like Baldur's Gate 3:
 - **F5**: Quick save
 - **F8**: Quick load
-- **J/K**: Previous/Next character
-- **I/O/P**: Inventory, character sheet, and spellbook
+- **J/K/M**: Character navigation keys (Previous/Next/Character sheet access)
+- **I/O/P**: Inventory, character actions, and spellbook
 - **[ / ]**: Bracket keys for additional character navigation
 - **F1-F4, F6**: Additional function keys for other shortcuts
+
+Note: While M is also available on the base gaming layer, it is duplicated here in an ergonomic position for easy access during character management without leaving the Game Function layer.
 
 The right side of the keyboard is intentionally left inactive on this layer to avoid accidental key presses while using the mouse.
 
